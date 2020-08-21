@@ -7,6 +7,10 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>providerdemo</name>
     <description>Dubbo project for Spring Boot</description>
+    <modules>
+        <module>providerdemo</module>
+        <module>consumerdemo</module>
+    </modules>
     <properties>
         <java.version>1.8</java.version>
     </properties>
@@ -45,6 +49,11 @@
         </dependency>
 
         <!--dubbo相关依赖-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>dubbo</artifactId>
+            <version>2.8.4</version>
+        </dependency>
         <dependency>
             <groupId>org.apache.zookeeper</groupId>
             <artifactId>zookeeper</artifactId>
