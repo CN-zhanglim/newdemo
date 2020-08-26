@@ -1,0 +1,23 @@
+server:
+  port: 8088
+  tomcat:
+    uri-encoding: UTF-8
+    accept-count: 1000
+spring:
+  application:
+    name: eureka-server
+eureka:
+#  客户端
+  client:
+#    是否将自己注册到server中去
+    register-with-eureka: false
+#    服务发现，是否从eureka中获取注册信息
+    fetch-registry: false
+#    Eureka客户端与服务端交互的地址，高可用状态配置另一个server的，单机就配自己的
+    eureka-server-u-r-l-context: /eureka
+  #  服务端配置
+  server:
+    #  是否开启自我保护模式
+    enable-self-preservation: false
+#    服务注册表清理时间
+    eviction-interval-timer-in-ms: 60000

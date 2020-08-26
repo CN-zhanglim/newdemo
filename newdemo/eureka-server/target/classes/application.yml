@@ -1,0 +1,23 @@
+server:
+  port: 8088
+  tomcat:
+    uri-encoding: UTF-8
+    accept-count: 1000
+spring:
+  application:
+    name: eureka-server
+eureka:
+#  �ͻ���
+  client:
+#    �Ƿ��Լ�ע�ᵽserver��ȥ
+    register-with-eureka: false
+#    �����֣��Ƿ��eureka�л�ȡע����Ϣ
+    fetch-registry: false
+#    Eureka�ͻ��������˽����ĵ�ַ���߿���״̬������һ��server�ģ����������Լ���
+    eureka-server-u-r-l-context: /eureka
+  #  ���������
+  server:
+    #  �Ƿ������ұ���ģʽ
+    enable-self-preservation: false
+#    ����ע�������ʱ��
+    eviction-interval-timer-in-ms: 60000
